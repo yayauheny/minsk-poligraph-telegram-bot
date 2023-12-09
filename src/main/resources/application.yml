@@ -1,0 +1,20 @@
+bot:
+  token: 6828867337:AAGgVyKAZ3zD1dRqoNLo5JqTrvl20D9aV0k
+  currency: BYN
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/print_bot_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    clean-on-validation-error: true
+    clean-disabled: false
